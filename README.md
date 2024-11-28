@@ -3,7 +3,7 @@
 ## ✒️ Description
 > Simple tool for displaying information about network interfaces
 
-`ipl` displays the interface name, IPv4 address, and mask in one line. The program was created to present the necessary information in an easy to look at way:
+`ipl` displays the interface name, IPv4 address, and mask in one line:
 
 ```
 ❯ ipl 
