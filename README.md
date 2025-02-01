@@ -16,3 +16,9 @@
 ```sh
 go build -o ./ipl
 ```
+
+Or you can use just:
+
+```sh
+just
+```
