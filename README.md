@@ -1,13 +1,13 @@
 # ipl
 
+## ✒️ Description
+> Simple tool for displaying information about network interfaces
+
 <p align="center">
   <a href="https://go-skill-icons.vercel.app/">
     <img src="https://go-skill-icons.vercel.app/api/icons?i=linux,windows,apple" />
   </a>
 </p>
-
-## ✒️ Description
-> Simple tool for displaying information about network interfaces
 
 `ipl` displays the interface name, IPv4 address, and mask in one line:
 
