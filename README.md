@@ -1,6 +1,7 @@
 # ipl
 
 ## ✒️ Description
+
 > Simple tool for displaying information about network interfaces
 
 <p align="center">
@@ -17,6 +18,7 @@
 [wlo1] 192.168.18.2/255.255.255.0
 [virbr0] 192.168.122.1/255.255.255.0
 ```
+
 ## ⚒️ To build
 
 ```sh
