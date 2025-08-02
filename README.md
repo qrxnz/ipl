@@ -22,7 +22,7 @@
 ## ⚒️ To build
 
 ```sh
-go build -o ./ipl
+go build .
 ```
 
 Or you can use just:
