@@ -3,13 +3,26 @@ package main
 import (
 	"fmt"
 	"net"
+
+	"github.com/charmbracelet/lipgloss"
+)
+
+var (
+	interfaceStyle = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("63"))  // Purple
+	ipStyle        = lipgloss.NewStyle().Foreground(lipgloss.Color("86"))   // Aqua
+	separatorStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("240")) // Gray
 )
 
 func main() {
 	ipAndMask := getIPAndMask()
 
 	for interfaceName, info := range ipAndMask {
-		fmt.Printf("[%s] %s/%s\n", interfaceName, info.ip, info.netmask)
+		fmt.Printf("[%s] %s%s%s\n",
+			interfaceStyle.Render(interfaceName),
+			ipStyle.Render(info.ip),
+			separatorStyle.Render("/"),
+			ipStyle.Render(info.netmask),
+		)
 	}
 }
 
