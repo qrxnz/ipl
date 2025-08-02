@@ -16,30 +16,33 @@
 
 ## Features
 
--   **Clear Output**: Displays interface name, IPv4 address, and mask in a single, readable line.
--   **Color-Coded**: Uses colors to distinguish between different parts of the output for better readability.
--   **Cross-Platform**: Works on Linux, Windows, and macOS.
--   **Lightweight**: A simple, fast tool with no external dependencies beyond what's needed for basic functionality.
+- **Clear Output**: Displays interface name, IPv4 address, and mask in a single, readable line.
+- **Color-Coded**: Uses colors to distinguish between different parts of the output for better readability.
+- **Cross-Platform**: Works on Linux, Windows, and macOS.
+- **Lightweight**: A simple, fast tool with no external dependencies beyond what's needed for basic functionality.
 
 ## Installation
 
 To build the application from the source, you need to have Go installed.
 
-1.  Clone the repository:
-    ```sh
-    git clone https://github.com/qrxnz/ipl.git
-    cd ipl
-    ```
+1. Clone the repository:
 
-2.  Build the binary:
-    ```sh
-    go build .
-    ```
+   ```sh
+   git clone https://github.com/qrxnz/ipl.git
+   cd ipl
+   ```
 
-    Alternatively, if you have `just` installed, you can simply run:
-    ```sh
-    just
-    ```
+1. Build the binary:
+
+   ```sh
+   go build .
+   ```
+
+   Alternatively, if you have `just` installed, you can simply run:
+
+   ```sh
+   just
+   ```
 
 ## Usage
 
