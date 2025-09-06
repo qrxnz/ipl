@@ -1,4 +1,4 @@
 build:
-    go build -o ./ipl
+    go build .
 
 run: build
