@@ -10,6 +10,13 @@
       system: let
         pkgs = import nixpkgs {inherit system;};
       in {
+        packages.default = pkgs.buildGoModule {
+          pname = "ipl";
+          version = "2.0.2";
+          src = ./.;
+          vendorHash = "sha256-Wn8K/t9e7zoLPyW4JInLGiT7m3yp3ZlY5K5JiYz8sCQ=";
+        };
+
         devShells.default = pkgs.mkShell rec {
           buildInputs = with pkgs; [
             # Go
@@ -24,14 +31,8 @@
 
             # Others
             just
-            watchexec
           ];
         };
       }
-    )
-    // {
-      overlays.default = self: pkgs: {
-        hello = self.packages."${pkgs.system}".hello;
-      };
-    };
+    );
 }
