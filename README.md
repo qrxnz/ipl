@@ -14,10 +14,6 @@
 -   **Color-Coded**: Uses colors to distinguish between different parts of the output for better readability.
 -   **Cross-Platform**: Works on Linux, Windows, and macOS.
 
-## ⚒️ Installation
-
-To build the application from the source, you need to have Go installed.
-
 ## 📦 Installation
 
 ### Build from source
