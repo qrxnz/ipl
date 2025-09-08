@@ -12,7 +12,7 @@
       in {
         packages.default = pkgs.buildGoModule {
           pname = "ipl";
-          version = "2.0.3";
+          version = "2.0.4";
           src = ./.;
           vendorHash = "sha256-Wn8K/t9e7zoLPyW4JInLGiT7m3yp3ZlY5K5JiYz8sCQ=";
         };
