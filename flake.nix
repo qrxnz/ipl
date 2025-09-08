@@ -30,7 +30,7 @@
             alejandra
 
             # Others
-            just
+            go-task
           ];
         };
       }
