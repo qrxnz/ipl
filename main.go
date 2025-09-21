@@ -13,8 +13,28 @@ var (
 	separatorStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("240")) // Gray
 )
 
+// netInfo provides an interface for network-related operations, to allow for mocking in tests.
+type netInfo interface {
+	Interfaces() ([]net.Interface, error)
+	InterfaceAddrs(iface *net.Interface) ([]net.Addr, error)
+}
+
+// realNetInfo is a concrete implementation of netInfo that uses the net package.
+type realNetInfo struct{}
+
+// Interfaces returns the list of system's network interfaces.
+func (r *realNetInfo) Interfaces() ([]net.Interface, error) {
+	return net.Interfaces()
+}
+
+// InterfaceAddrs returns the list of addresses for a given interface.
+func (r *realNetInfo) InterfaceAddrs(iface *net.Interface) ([]net.Addr, error) {
+	return iface.Addrs()
+}
+
 func main() {
-	ipAndMask := getIPAndMask()
+	netinfo := &realNetInfo{}
+	ipAndMask := getIPAndMask(netinfo)
 
 	for interfaceName, info := range ipAndMask {
 		fmt.Printf("[%s] %s%s%s\n",
@@ -31,17 +51,17 @@ type IPInfo struct {
 	netmask string
 }
 
-func getIPAndMask() map[string]IPInfo {
+func getIPAndMask(n netInfo) map[string]IPInfo {
 	ipMaskList := make(map[string]IPInfo)
 
-	interfaces, err := net.Interfaces()
+	interfaces, err := n.Interfaces()
 	if err != nil {
 		fmt.Println("Error getting network interfaces:", err)
 		return ipMaskList
 	}
 
 	for _, iface := range interfaces {
-		addrs, err := iface.Addrs()
+		addrs, err := n.InterfaceAddrs(&iface)
 		if err != nil {
 			fmt.Println("Error getting addresses for interface", iface.Name, ":", err)
 			continue
