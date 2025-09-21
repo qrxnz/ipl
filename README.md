@@ -45,7 +45,7 @@ Add input in your flake like:
 ```nix
 {
  inputs = {
-   nveem = {
+   ipl = {
      url = "github:qrxnz/ipl";
      inputs.nixpkgs.follows = "nixpkgs";
    };
