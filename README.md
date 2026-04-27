@@ -24,7 +24,7 @@ To build the project, you need to have Go installed.
 go build .
 ```
 
-Alternatively, if you have `just` installed, you can simply run:
+Alternatively, if you have `go-task` installed, you can simply run:
 
 ```sh
 task build
