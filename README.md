@@ -30,7 +30,7 @@ Alternatively, if you have `go-task` installed, you can simply run:
 task build
 ```
 
-### Using Nix ❄️
+### ❄️ Using Nix
 
 -   Try it without installing:
 
