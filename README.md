@@ -14,33 +14,47 @@
 -   **Color-Coded**: Uses colors to distinguish between different parts of the output for better readability.
 -   **Cross-Platform**: Works on Linux, Windows, and macOS.
 
-## 📦 Installation
+## 🛠️ Installation
 
-### Build from source
+### 📦 Binary Releases
 
-To build the project, you need to have Go installed.
+Pre-compiled binaries for Linux, Windows, and macOS are available on the [Releases](https://github.com/qrxnz/ipl/releases) page.
 
-```sh
-go build .
+### 🐹Using Go
+
+You can install `ipl` directly using `go install`:
+
+```bash
+go install github.com/qrxnz/ipl@latest
 ```
 
-Alternatively, if you have `go-task` installed, you can simply run:
+### 🏗️ Build from Source
 
-```sh
+To build from source, you need to have [Go](https://go.dev/) installed.
+
+```bash
+git clone https://github.com/qrxnz/ipl.git
+cd ipl
+go build -o ipl .
+```
+
+Alternatively, if you have [Task](https://taskfile.dev/) installed, you can use:
+
+```bash
 task build
 ```
 
 ### ❄️ Using Nix
 
--   Try it without installing:
+-   **Run without installing:**
 
-```sh
+```bash
 nix run github:qrxnz/ipl
 ```
 
--   Installation:
+-   **Add to a Nix Flake:**
 
-Add input in your flake like:
+Add input in your flake like
 
 ```nix
 {
@@ -53,7 +67,7 @@ Add input in your flake like:
 }
 ```
 
-With the input added you can reference it directly:
+With the input added you can reference it directly
 
 ```nix
 { inputs, system, ... }:
@@ -65,11 +79,9 @@ With the input added you can reference it directly:
 }
 ```
 
-or
+-   **Install imperatively:**
 
-You can install this package imperatively with the following command:
-
-```nix
+```bash
 nix profile install github:qrxnz/ipl
 ```
 
