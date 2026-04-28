@@ -46,7 +46,7 @@ task build
 
 ### ❄️ Using Nix
 
--   **Run without installing:**
+-   **Run without installing**
 
 ```bash
 nix run github:qrxnz/ipl
