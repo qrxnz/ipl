@@ -10,9 +10,9 @@
 
 ## 🧰 Features
 
--   **Clear Output**: Displays interface name, IPv4 address, and mask in a single, readable line.
--   **Color-Coded**: Uses colors to distinguish between different parts of the output for better readability.
--   **Cross-Platform**: Works on Linux, Windows, and macOS.
+- **Clear Output**: Displays interface name, IPv4 address, and mask in a single, readable line.
+- **Color-Coded**: Uses colors to distinguish between different parts of the output for better readability.
+- **Cross-Platform**: Works on Linux, Windows, and macOS.
 
 ## 🛠️ Installation
 
@@ -46,13 +46,13 @@ task build
 
 ### ❄️ Using Nix
 
--   **Run without installing**
+- **Run without installing**
 
 ```bash
 nix run github:qrxnz/ipl
 ```
 
--   **Add to a Nix Flake**
+- **Add to a Nix Flake**
 
 Add input in your flake like:
 
@@ -79,7 +79,7 @@ With the input added you can reference it directly:
 }
 ```
 
--   **Install imperatively**
+- **Install imperatively**
 
 ```bash
 nix profile install github:qrxnz/ipl

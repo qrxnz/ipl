@@ -26,8 +26,9 @@
 
             # Formatters
             treefmt
-            mdformat
+            taplo
             alejandra
+            prettier
 
             # Others
             go-task
