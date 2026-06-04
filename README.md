@@ -11,6 +11,9 @@
     <a href="https://github.com/qrxnz/ipl">
         <img src="https://img.shields.io/github/repo-size/qrxnz/ipl?color=ea999c&labelColor=303446&style=for-the-badge">
     </a>
+    <a href="https://github.com/qrxnz/ipl/actions/workflows/go.yml">
+        <img src="https://img.shields.io/github/actions/workflow/status/qrxnz/ipl/go.yml?color=a6e3a1&labelColor=303446&style=for-the-badge&label=Go%20Workflow">
+    </a>
     <a href="https://github.com/qrxnz/ipl/blob/main/.github/LICENCE">
         <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=ca9ee6&colorA=313244&colorB=cba6f7"/>
     </a>
