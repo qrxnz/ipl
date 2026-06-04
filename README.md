@@ -1,6 +1,23 @@
 # ipl
 
-[![Go Workflow](https://github.com/qrxnz/ipl/actions/workflows/go.yml/badge.svg)](https://github.com/qrxnz/ipl/actions/workflows/go.yml)
+<h3 align="center">
+  <div>
+    <a href="https://github.com/qrxnz/ipl/issues">
+        <img src="https://img.shields.io/github/issues/qrxnz/ipl?color=fab387&labelColor=303446&style=for-the-badge">
+    </a>
+    <a href="https://github.com/qrxnz/ipl/stargazers">
+        <img src="https://img.shields.io/github/stars/qrxnz/ipl?color=ca9ee6&labelColor=303446&style=for-the-badge">
+    </a>
+    <a href="https://github.com/qrxnz/ipl">
+        <img src="https://img.shields.io/github/repo-size/qrxnz/ipl?color=ea999c&labelColor=303446&style=for-the-badge">
+    </a>
+    <a href="https://github.com/qrxnz/ipl/blob/main/.github/LICENCE">
+        <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=ca9ee6&colorA=313244&colorB=cba6f7"/>
+    </a>
+    <br>
+    </div>
+   </h3>
+   <br>
 
 ![Screenshot of ipl output](https://github.com/user-attachments/assets/9fb46390-2187-4305-8446-8237fca8ed61)
 
